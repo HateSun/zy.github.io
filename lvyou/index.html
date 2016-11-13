@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="styles/common.css"/>
+<link rel="stylesheet" href="styles/index.css"/>
+<link rel="stylesheet" href="styles/swiper.min.css"/>
+<script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);  flex(100, 1);
+</script>
+</head>
+
+<body>
+	<section class="container">
+    	<header class="head">
+            <section class="search clearfix">
+                <h1 class="logo fl"><img src="images/ming/logo.png" alt="logo"/></h1>
+                <section class="soso fl">
+                    <form class="fom">
+                        <input type="text"/>
+                    </form>
+                    <span>搜索目的地</span>
+                </section>
+            </section>
+            <section class="banner swiper-container">
+                <ul class="banner-list swiper-wrapper">
+                    <li class="swiper-slide"><img src="images/ming/banner.png" alt="baner1"/></li>
+                    <li class="swiper-slide"><img src="images/ming/main1.png" alt="baner2"></li>
+                    <li class="swiper-slide"><img src="images/ming/main2.png" alt="baner2"></li>
+                    <li class="swiper-slide"><img src="images/ming/main3.png" alt="baner2"></li>
+                    <li class="swiper-slide"><img src="images/ming/main4.png" alt="baner2"></li>
+                </ul>
+                <ol class="code swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                    <li class="swiper-pagination"></li>
+                    <li class="swiper-pagination"></li>
+                    <li class="swiper-pagination"></li>
+                    <li class="swiper-pagination"></li>
+                </ol>
+            </section>
+            <nav class="naver">
+                <ul class="naver-list clearfix">
+                    <li>
+                    	<section><img src="images/ming/menu1.png" alt="m1"/></section>
+                        <span>看攻略</span>
+                    </li>
+                    <li>
+                        <section><img src="images/ming/menu2.png" alt="m1"/></section>
+                        <span>抢折扣</span>
+                    </li>
+                    <li>
+                        <section><img src="images/ming/menu3.png" alt="m1"/></section>
+                        <span>订酒店</span>
+                    </li>
+                    <li>
+                        <section><img src="images/ming/menu4.png" alt="m1"/></section>
+                        <span>我在哪</span>
+                    </li>
+                </ul>
+            
+            </nav>
+		</header>
+    
+        <section class="main">
+                <section class="main1">
+                    <p>旅游推荐</p>
+                    <section class="main1-pic1"><img src="images/ming/main1.png"alt="ba"></section>
+                    <section class="f1 clearfix">
+                        <section ><img src="images/ming/main2.png"></section>
+                        <section><img src="images/ming/main3.png"></section>
+                    </section>
+                </section>
+
+                <section class="main2">
+                    <p class="word">折扣游</p>
+                    <ul class="zk-list">
+                        <li>
+                            <section class="back"><img src="images/ming/main3.png"></section>
+                            <p>塞班岛5-6天（欢乐自由行）</p>
+                            <section class="detail clearfix">
+                                <span class="dz fl">4.7折</span>
+                                <span class="money fr"><mark>5999</mark>元起</span>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="back"><img src="images/ming/main4.png"></section>
+                            <p>塞班岛5-6天（欢乐自由行）</p>
+                            <section class="detail clearfix">
+                                <span class="dz fl">4.7折</span>
+                                <span class="money fr"><mark>5999</mark>元起</span>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="back"><img src="images/ming/main5.png"></section>
+                            <p>塞班岛5-6天（欢乐自由行）</p>
+                            <section class="detail clearfix">
+                                <span class="dz fl">4.7折</span>
+                                <span class="money fr"><mark>5999</mark>元起</span>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="back"><img src="images/ming/main6.png"></section>
+                            <p>塞班岛5-6天（欢乐自由行）</p>
+                            <section class="detail clearfix">
+                                <span class="dz fl">4.7折</span>
+                                <span class="money fr"><mark>5999</mark>元起</span>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="back"><img src="images/ming/main7.png"></section>
+                            <p>塞班岛5-6天（欢乐自由行）</p>
+                            <section class="detail clearfix">
+                                <span class="dz fl">4.7折</span>
+                                <span class="money fr"><mark>5999</mark>元起</span>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="back"><img src="images/ming/main7.png"></section>
+                            <p>塞班岛5-6天（欢乐自由行）</p>
+                            <section class="detail clearfix">
+                                <span class="dz fl">4.7折</span>
+                                <span class="money fr"><mark>5999</mark>元起</span>
+                            </section>
+                        </li>
+                    </ul>
+                    <p class="more" >查看更多</p>
+                </section>
+
+        </section>
+    
+        <footer class="foot">
+            <section class="menu-list clearfix">
+                <li><i><img src="images/ming/nav1.png"></i>推荐</li>
+                <li><i><img src="images/ming/nav2.png"></i>目的地</li>
+                <li><i><img src="images/ming/nav3.png"></i>帖子</li>
+                <li><i><img src="images/ming/nav4.png"></i>我的</li>
+            </section>
+        </footer>
+    
+    </section>
+    <script src="js/zepto.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script>
+		 	var doc = document.documentElement;
+			function changeFontSize(){
+				doc.style.fontSize = doc.clientWidth/640*16 + 'px';
+			}
+			window.onresize = function(){
+				changeFontSize()
+			}
+			changeFontSize();
+        //autoplay
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                paginationClickable: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false
+            });
+//            var zkList=document.querySelectorAll('.zk-list')[0];
+//            var li=document.querySelectorAll('.zk-list li');
+//            zkList.style.height=li[0].offsetHeight*li.length/(doc.clientWidth/640*16)+'px';
+    </script>
+</body>
+</html>

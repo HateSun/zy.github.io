@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/common.css"/>
+    <link rel="stylesheet" href="styles/geren.css"/>
+</head>
+<body>
+    <section class="container">
+        <header class="">
+            <section class="tt clearfix">
+                <section class="bc"><img src="images/person/bc.png" alt="背景"></section>
+                    <section class="tou fl"><img src="images/person/tou.png"></section>
+                    <section class="details fl">
+                        <p>--凌乱</p>
+                        <p>ID 123456789</p>
+                    </section>
+            </section>
+            <nav class="menu">
+                <section style="background: url(images/person/dd.png) no-repeat 3.6rem center">订单</section>
+                <section style="background: url(images/person/sc.png) no-repeat 3.2rem center">收藏</section>
+                <section style="background: url(images/person/tj.png) no-repeat 3.2rem center">推荐</section>
+            </nav>
+        </header>
+        <section class="main">
+            <section style="background:url(images/person/more.png) #fff no-repeat 38rem center">修改个人资料</section>
+            <section style="background:url(images/person/more.png) #fff no-repeat 38rem center">修改密码</section>
+            <section class="xiaoxi clearfix">
+                <span class="fl">声音推送消息</span>
+                <span class="box fr">
+                    <i class="music"></i>
+                </span>
+            </section>
+            <section style="background:url(images/person/more.png) #fff no-repeat 38rem center">猜你喜欢</section>
+            <section style="background:url(images/person/more.png) #fff no-repeat 38rem center">附近热门</section>
+            <section style="background:url(images/person/more.png) #fff no-repeat 38rem center">推荐商家</section>
+            <section style="background:url(images/person/more.png) #fff no-repeat 38rem center">设置</section>
+        </section>
+        <footer>
+            <ul class="menu2">
+                <li style="background: url(images/person/sy.png) no-repeat center 1rem">首页</li>
+                <li style="background: url(images/person/sj.png) no-repeat center 1rem">商家</li>
+                <li style="background: url(images/person/gwc.png) no-repeat center 1rem">购物车</li>
+                <li style="background: url(images/person/zx.png) no-repeat center 1rem">个人中心</li>
+            </ul>
+        </footer>
+    </section>
+    <script src="js/zepto.js"></script>
+    <script>
+        var doc = document.documentElement;
+        function changeFontSize(){
+            doc.style.fontSize = doc.clientWidth/640*16 + 'px';
+        }
+        window.onresize = function(){
+            changeFontSize()
+        }
+        changeFontSize();
+        var oMusic=$('.music').eq(0);
+        var oBox=$('.box').eq(0);
+        var ok=true;
+        $(oMusic).on ('touchstart',function() {
+            if(ok){
+                $(oMusic).css({'left':'4rem','transition':'0.2s all'});
+                $(oBox).css('backgroundColor','#33c437');
+
+                ok=false
+            }else{
+                $(oMusic).css({'left':'0','transition':'0.2s all'});
+                $(oBox).css('backgroundColor','#ccc');
+                ok=true;
+            }
+        });
+    </script>
+</body>
+</html>
